@@ -5,20 +5,35 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.gb</groupId>
-		<artifactId>middleware-dbchange</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<artifactId>dblogger-all</artifactId>
+		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>dbchange-client</artifactId>
-	<name>dbchange-client</name>
+	<artifactId>dblogger-client</artifactId>
+	<name>dblogger-client</name>
+	<version>1.0-SNAPSHOT</version>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.gb</groupId>
-			<artifactId>dbchange-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>dblogger-remoting</artifactId>
 		</dependency>
 	</dependencies>
+	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,0 +1,1 @@
+exec $(dirname $0)/dblogger-run-class.sh com.gb.dblogger.client.tool.ConsoleDbChangeEventListener "$@"
